@@ -11,5 +11,7 @@ https://cloud.google.com/appengine/docs/flexible/custom-runtimes/build
 When in the same folder run
 
 ```
-gcloud app deploy
+gcloud app deploy --project your-project
 ```
+
+Only deploy to projects with app engine enabled for regions supported by flexible environment e.g. everywhere BUT europe-west :-/ - you may need to create a new Google project for this. 
