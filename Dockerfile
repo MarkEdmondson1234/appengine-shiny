@@ -2,7 +2,7 @@ FROM rocker/shiny
 MAINTAINER Mark Edmondson (r@sunholo.com)
 
 # install R package dependencies
-RUN apt-get install -y libssl-dev
+RUN apt-get update && apt-get install -y libssl-dev
     
 ## Install packages from CRAN
 RUN install2.r --error \ 
